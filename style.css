@@ -9,41 +9,44 @@
 }
 
 body {
-  background: #f5f7fa;
-  color: #333;
+  background: #0f172a;
+  color: #e2e8f0;
 }
 
 /* CONTAINER */
 .container {
   width: 85%;
   margin: auto;
-  padding: 40px 0;
+  padding: 50px 0;
 }
 
 /* HEADER */
 header {
   text-align: center;
-  padding: 60px 0;
-  background: white;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  padding: 70px 0;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
 }
 
 .profile-pic {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  border: 3px solid #4facfe;
+  border: 3px solid #38bdf8;
   margin-bottom: 15px;
 }
 
+h1 {
+  font-size: 32px;
+}
+
 .title {
-  color: #555;
+  color: #94a3b8;
   margin-top: 5px;
 }
 
 .tagline {
   font-size: 14px;
-  color: #777;
+  color: #64748b;
 }
 
 /* BUTTONS */
@@ -54,8 +57,8 @@ header {
 .buttons a {
   text-decoration: none;
   color: white;
-  background: #4facfe;
-  padding: 10px 20px;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  padding: 10px 22px;
   border-radius: 25px;
   margin: 5px;
   display: inline-block;
@@ -63,29 +66,31 @@ header {
 }
 
 .buttons a:hover {
-  background: #00c6ff;
-  transform: translateY(-2px);
+  transform: scale(1.08);
+  box-shadow: 0 0 15px rgba(56,189,248,0.6);
 }
 
 /* SECTION TITLE */
 h2 {
   text-align: center;
-  margin-bottom: 20px;
-  color: #222;
+  margin-bottom: 25px;
+  color: #38bdf8;
 }
 
 /* CARD */
 .card {
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
+  background: rgba(30, 41, 59, 0.6);
+  border-radius: 15px;
+  padding: 25px;
   margin-top: 20px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.05);
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(99,102,241,0.3);
 }
 
 /* SKILLS */
@@ -97,8 +102,8 @@ h2 {
 }
 
 .skills span {
-  background: #eef4ff;
-  color: #4facfe;
+  background: linear-gradient(135deg, #6366f1, #38bdf8);
+  color: white;
   padding: 8px 15px;
   border-radius: 20px;
   font-size: 14px;
@@ -108,7 +113,7 @@ h2 {
 .card a {
   display: inline-block;
   margin-top: 10px;
-  color: #4facfe;
+  color: #38bdf8;
   text-decoration: none;
 }
 
@@ -125,7 +130,7 @@ h2 {
 footer {
   text-align: center;
   padding: 20px;
-  color: #777;
+  color: #64748b;
 }
 
 /* RESPONSIVE */
