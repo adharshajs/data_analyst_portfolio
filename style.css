@@ -8,9 +8,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+/* BASE BACKGROUND */
 body {
-  background: #0f172a;
-  color: #e2e8f0;
+  background: #0b0b0f;
+  color: #f1f1f1;
 }
 
 /* CONTAINER */
@@ -24,29 +25,33 @@ body {
 header {
   text-align: center;
   padding: 70px 0;
-  background: linear-gradient(135deg, #1e293b, #0f172a);
+  background: linear-gradient(135deg, #111, #1a1a1f);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
 .profile-pic {
-  width: 120px;
-  height: 120px;
+  width: 125px;
+  height: 125px;
   border-radius: 50%;
-  border: 3px solid #38bdf8;
+  border: 3px solid #ffb6c1; /* light pink */
   margin-bottom: 15px;
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 34px;
+  background: linear-gradient(90deg, #ffb6c1, #87cefa, #f5f5dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .title {
-  color: #94a3b8;
+  color: #cfcfcf;
   margin-top: 5px;
 }
 
 .tagline {
   font-size: 14px;
-  color: #64748b;
+  color: #aaaaaa;
 }
 
 /* BUTTONS */
@@ -56,41 +61,50 @@ h1 {
 
 .buttons a {
   text-decoration: none;
-  color: white;
-  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: black;
   padding: 10px 22px;
   border-radius: 25px;
   margin: 5px;
   display: inline-block;
+  font-weight: 500;
   transition: 0.3s;
 }
 
-.buttons a:hover {
-  transform: scale(1.08);
-  box-shadow: 0 0 15px rgba(56,189,248,0.6);
+/* Individual button colors */
+.buttons a:nth-child(1) {
+  background: #87cefa; /* light blue */
 }
 
-/* SECTION TITLE */
+.buttons a:nth-child(2) {
+  background: #f5f5dc; /* beige */
+}
+
+.buttons a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+/* SECTION TITLES */
 h2 {
   text-align: center;
   margin-bottom: 25px;
-  color: #38bdf8;
+  color: #ffb6c1; /* light pink accent */
 }
 
-/* CARD */
+/* CARDS */
 .card {
-  background: rgba(30, 41, 59, 0.6);
+  background: linear-gradient(145deg, #15151b, #0e0e12);
   border-radius: 15px;
   padding: 25px;
   margin-top: 20px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.05);
+  border-left: 4px solid #87cefa;
   transition: 0.3s;
 }
 
 .card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 0 20px rgba(99,102,241,0.3);
+  border-left: 4px solid #ffb6c1;
+  box-shadow: 0 0 20px rgba(255,182,193,0.2);
 }
 
 /* SKILLS */
@@ -102,35 +116,43 @@ h2 {
 }
 
 .skills span {
-  background: linear-gradient(135deg, #6366f1, #38bdf8);
-  color: white;
   padding: 8px 15px;
   border-radius: 20px;
   font-size: 14px;
+  color: black;
+  font-weight: 500;
 }
+
+/* Skill colors cycling */
+.skills span:nth-child(4n+1) { background: #ffb6c1; } /* pink */
+.skills span:nth-child(4n+2) { background: #87cefa; } /* blue */
+.skills span:nth-child(4n+3) { background: #f5f5dc; } /* beige */
+.skills span:nth-child(4n+4) { background: #ffa07a; } /* light red/orange */
 
 /* LINKS */
 .card a {
   display: inline-block;
   margin-top: 10px;
-  color: #38bdf8;
+  color: #87cefa;
   text-decoration: none;
 }
 
 .card a:hover {
-  text-decoration: underline;
+  color: #ffb6c1;
 }
 
 /* CONTACT */
 .contact p {
   text-align: center;
+  color: #ddd;
 }
 
 /* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
-  color: #64748b;
+  color: #888;
+  border-top: 1px solid rgba(255,255,255,0.05);
 }
 
 /* RESPONSIVE */
